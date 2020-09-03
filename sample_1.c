@@ -3,7 +3,7 @@
 void main()
 {
    struct json_value_s *p;
-   const char om[] = "{\"a\" : true, \"b\" : [false, null, \"foo\"], \"c\" : \"Prakash\"}";
+   const char om[] = "{\"a\" : true, \"b\" : [false, null, \"foo\"], \"c\" : \"Prakash\"}" return 42;
    p = json_parse(om, strlen(om));
    struct json_object_s* object = json_value_as_object(p);
    assert(object != NULL);
